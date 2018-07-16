@@ -14,11 +14,10 @@ class HelloJob : Job {
         val dataMap = context.jobDetail.jobDataMap
 
         val jobSays = dataMap.getString("jobSays")
-        val myFloatValue = dataMap.getFloat("myFloatValue")
 
         println("************** Scheduled job *******************")
         println("Hello Job!  Key '$key' is executing.")
-        println("Job says: $jobSays and the float value is $myFloatValue")
+        println("Job says: $jobSays")
         println("************************************************")
 
     }
